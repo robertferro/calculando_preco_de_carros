@@ -55,7 +55,7 @@ if pagina=='Banco de Dados':
 	st.write('**Aqui temos alguns registros de veículos das mais variadas marcas e modelos.**')
 	st.write('**Os dados exibidos aqui foram coletados via web e trazem valores propostos por usuários quando estão negociando seus carros.**')
 	st.write('**Faça uma busca em nossa base de dados interagindo com os widgets abaixo!!!**')	
-	dados=dados_originais.copy()
+	dados=dados_raw.copy()
 	marcas=list(dados.sort_values('marca').marca.unique())
 	marca=st.selectbox('Marca',marcas)
 	df=dados.copy()
