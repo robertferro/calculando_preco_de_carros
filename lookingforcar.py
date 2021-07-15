@@ -5,12 +5,12 @@ from sklearn.ensemble import RandomForestRegressor
 import numpy as np
 
 
-st.set_page_config(page_title = 'Research Car', 
+st.set_page_config(page_title = 'Looking For Car', 
 				   layout = 'wide', 
 				   initial_sidebar_state = 'auto')
 
 
-st.title('Research a Car')
+st.title('Looking For Car')
 
 url = 'https://raw.githubusercontent.com/robertferro/carros_populares/main/3%20-%20EDA/carros_populares_filtrados.csv'
 dados_raw=pd.read_csv(url,sep=',')
