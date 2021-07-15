@@ -93,7 +93,7 @@ if pagina=='Avaliação':
 
 
 	dados_entrada = pd.DataFrame(dicionario)
-	st.write(df)
+	st.write(dados_entrada)
 
 
 	# Encoding das variaveis categoricas do dataframe
@@ -112,11 +112,7 @@ if pagina=='Avaliação':
 
 	st.write(dados_entrada)
 	st.markdown('---')
-	
-	# separando os dados e treinando o modelo
 
-	modelo=open('modelo_precos_02','rb')
-	modelo=pickle.load(modelo)
 	
 
 	if st.button('Executar a Simulação'):
